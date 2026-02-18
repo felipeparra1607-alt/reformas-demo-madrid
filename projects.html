@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyectos | Reformas Nova Madrid</title>
+    <meta name="description" content="Proyectos de reformas en Madrid con ejemplos visuales de acabados y distribución." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <div><strong>Tel:</strong> <a href="tel:+34600000000">+34 600 00 00 00</a></div>
+        <div>Presupuesto en 24h</div>
+        <a class="btn btn-whatsapp" href="https://wa.me/34600000000?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20una%20reforma%20en%20Madrid." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="index.html">Reformas Nova Madrid</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-nav" aria-expanded="false"><span></span></button>
+        <nav id="primary-nav" class="nav" aria-label="Menú principal">
+          <a href="index.html">Inicio</a>
+          <a href="projects.html" class="active">Proyectos</a>
+          <a href="about.html">Sobre nosotros</a>
+          <a href="contact.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container" data-animate>
+          <h1>Proyectos de reformas en Madrid</h1>
+          <p>Ejemplos visuales de acabados y distribución.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cards-grid cols-3" id="projects-grid">
+            <article class="card project-card" tabindex="0" role="button" data-project="0" data-animate>
+              <img src="https://unsplash.com/photos/8FIqK2J7jSc/download?force=true" alt="Reforma integral luminosa en Chamberí" loading="lazy" />
+              <div class="project-content">
+                <h3>Reforma integral luminosa</h3>
+                <p class="meta">Zona: Chamberí · Duración: 15 días</p>
+              </div>
+            </article>
+            <article class="card project-card" tabindex="0" role="button" data-project="1" data-animate>
+              <img src="https://unsplash.com/photos/xW2oK045Rwc/download?force=true" alt="Baño contemporáneo en Retiro" loading="lazy" />
+              <div class="project-content">
+                <h3>Baño contemporáneo</h3>
+                <p class="meta">Zona: Retiro · Duración: 10 días</p>
+              </div>
+            </article>
+            <article class="card project-card" tabindex="0" role="button" data-project="2" data-animate>
+              <img src="https://unsplash.com/photos/ET9MLDGk7zM/download?force=true" alt="Cocina abierta en Salamanca" loading="lazy" />
+              <div class="project-content">
+                <h3>Cocina abierta funcional</h3>
+                <p class="meta">Zona: Salamanca · Duración: 12 días</p>
+              </div>
+            </article>
+            <article class="card project-card" tabindex="0" role="button" data-project="3" data-animate>
+              <img src="https://unsplash.com/photos/3tu1nlIg4XM/download?force=true" alt="Vivienda modernizada en Chamartín" loading="lazy" />
+              <div class="project-content">
+                <h3>Vivienda modernizada</h3>
+                <p class="meta">Zona: Chamartín · Duración: 14 días</p>
+              </div>
+            </article>
+            <article class="card project-card" tabindex="0" role="button" data-project="4" data-animate>
+              <img src="https://unsplash.com/photos/yygL_U1Vmvk/download?force=true" alt="Salón y cocina renovados en Arganzuela" loading="lazy" />
+              <div class="project-content">
+                <h3>Salón y cocina renovados</h3>
+                <p class="meta">Zona: Arganzuela · Duración: 11 días</p>
+              </div>
+            </article>
+            <article class="card project-card" tabindex="0" role="button" data-project="5" data-animate>
+              <img src="https://unsplash.com/photos/8FIqK2J7jSc/download?force=true" alt="Redistribución integral en Moncloa" loading="lazy" />
+              <div class="project-content">
+                <h3>Redistribución integral</h3>
+                <p class="meta">Zona: Moncloa · Duración: 13 días</p>
+              </div>
+            </article>
+          </div>
+          <p class="note" data-animate>Imágenes de referencia.</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="project-modal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Cerrar modal">×</button>
+        <h2 id="modal-title">Proyecto</h2>
+        <p id="modal-description"></p>
+        <div class="modal-images">
+          <figure class="modal-image-wrap">
+            <span>Antes</span>
+            <img id="modal-before" src="" alt="Imagen del estado antes de la reforma" loading="lazy" />
+          </figure>
+          <figure class="modal-image-wrap">
+            <span>Después</span>
+            <img id="modal-after" src="" alt="Imagen del estado después de la reforma" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Reformas Nova Madrid</h4>
+            <p>Proyectos con ejecución organizada, comunicación constante y acabados actuales.</p>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <p>Tel: <a href="tel:+34600000000">+34 600 00 00 00</a></p>
+            <p>Email: <a href="mailto:hola@reformasnovamadrid.es">hola@reformasnovamadrid.es</a></p>
+            <p>Zona: Madrid capital y alrededores</p>
+          </div>
+          <div>
+            <h4>Enlaces</h4>
+            <nav class="footer-links">
+              <a href="index.html">Inicio</a>
+              <a href="projects.html">Proyectos</a>
+              <a href="about.html">Sobre nosotros</a>
+              <a href="contact.html">Contacto</a>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2026 Reformas Nova Madrid. Todos los derechos reservados.</div>
+      </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/34600000000?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20una%20reforma%20en%20Madrid." target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+      <span>WA</span>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
