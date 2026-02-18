@@ -504,7 +504,8 @@ textarea {
 }
 
 .about-main {
-  padding-top: 32px;
+  padding-top: 24px;
+  padding-bottom: 52px;
 }
 
 .about-layout {
@@ -561,6 +562,31 @@ textarea {
 .about-cta p {
   margin: 0 0 14px;
   color: var(--text-muted);
+}
+
+.value-card {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+}
+
+.value-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.value-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  color: var(--whatsapp);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
 }
 
 .footer {
@@ -746,8 +772,8 @@ textarea {
 
   .about-layout {
     grid-template-columns: 1.1fr 0.9fr;
-    gap: 36px;
-    align-items: center;
+    gap: 34px;
+    align-items: start;
   }
 
   .about-image {
