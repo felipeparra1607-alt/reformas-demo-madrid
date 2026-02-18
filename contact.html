@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Reformas Nova Madrid</title>
+    <meta name="description" content="Pide presupuesto para tu reforma en Madrid. Respuesta rápida y planificación clara." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <div><strong>Tel:</strong> <a href="tel:+34600000000">+34 600 00 00 00</a></div>
+        <div>Presupuesto en 24h</div>
+        <a class="btn btn-whatsapp" href="https://wa.me/34600000000?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20una%20reforma%20en%20Madrid." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="index.html">Reformas Nova Madrid</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-nav" aria-expanded="false"><span></span></button>
+        <nav id="primary-nav" class="nav" aria-label="Menú principal">
+          <a href="index.html">Inicio</a>
+          <a href="projects.html">Proyectos</a>
+          <a href="about.html">Sobre nosotros</a>
+          <a href="contact.html" class="active">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container" data-animate>
+          <h1>Pide presupuesto</h1>
+          <p>Cuéntanos tu reforma y te contactamos con una propuesta inicial en 24h laborables.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="form-wrap" data-animate>
+            <form class="form-grid cols-2" data-ajax-form>
+              <div>
+                <label for="name">Nombre</label>
+                <input id="name" name="nombre" autocomplete="name" required />
+              </div>
+              <div>
+                <label for="phone">Teléfono</label>
+                <input id="phone" name="telefono" autocomplete="tel" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" autocomplete="email" required />
+              </div>
+              <div>
+                <label for="zone">Zona</label>
+                <select id="zone" name="zona" required>
+                  <option value="">Selecciona zona</option>
+                  <option>Chamberí</option>
+                  <option>Retiro</option>
+                  <option>Salamanca</option>
+                  <option>Chamartín</option>
+                  <option>Arganzuela</option>
+                  <option>Moncloa</option>
+                  <option>Otra</option>
+                </select>
+              </div>
+              <div>
+                <label for="type">Tipo de reforma</label>
+                <select id="type" name="tipo" required>
+                  <option value="">Selecciona tipo</option>
+                  <option>Integral</option>
+                  <option>Baño</option>
+                  <option>Cocina</option>
+                  <option>Otra</option>
+                </select>
+              </div>
+              <div></div>
+              <div style="grid-column: 1 / -1;">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="mensaje" required></textarea>
+              </div>
+              <div style="grid-column: 1 / -1;">
+                <button type="submit" class="btn btn-primary" style="width:100%;">Enviar solicitud</button>
+                <p class="form-message" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+
+          <aside class="cards-grid" data-animate>
+            <article class="card">
+              <h3>Contacto rápido</h3>
+              <p style="margin-bottom: 14px;">Respuesta en 24h.</p>
+              <div class="hero-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/34600000000?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20una%20reforma%20en%20Madrid." target="_blank" rel="noopener">WhatsApp</a>
+                <a class="btn btn-secondary" href="tel:+34600000000">Llamar</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Horario</h3>
+              <p>L–V: 9:00–19:00 | Sáb: 10:00–14:00</p>
+            </article>
+            <article class="card">
+              <h3>Preguntas frecuentes</h3>
+              <p><strong>¿Cuánto tarda un presupuesto?</strong><br />Normalmente en 24h laborables según la complejidad del proyecto.</p>
+              <p><strong>¿Trabajáis en toda la Comunidad de Madrid?</strong><br />Principalmente Madrid capital y alrededores, con visitas programadas.</p>
+              <p><strong>¿Incluye garantía?</strong><br />Sí, garantía por escrito según el trabajo y materiales incluidos.</p>
+            </article>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Reformas Nova Madrid</h4>
+            <p>Proyecto y ejecución de reformas con procesos claros y atención cercana.</p>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <p>Tel: <a href="tel:+34600000000">+34 600 00 00 00</a></p>
+            <p>Email: <a href="mailto:hola@reformasnovamadrid.es">hola@reformasnovamadrid.es</a></p>
+            <p>Zona: Madrid capital y alrededores</p>
+          </div>
+          <div>
+            <h4>Enlaces</h4>
+            <nav class="footer-links">
+              <a href="index.html">Inicio</a>
+              <a href="projects.html">Proyectos</a>
+              <a href="about.html">Sobre nosotros</a>
+              <a href="contact.html">Contacto</a>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2026 Reformas Nova Madrid. Todos los derechos reservados.</div>
+      </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/34600000000?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20una%20reforma%20en%20Madrid." target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+      <span>WA</span>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
